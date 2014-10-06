@@ -4,8 +4,8 @@
 
 import data
 
-MAX = None
-MIN = None
+MAXIMUM = None
+MINIMUM = None
 DAYS = 0
 TOTAL = 0
 
@@ -15,13 +15,13 @@ for DAY in data.TRANSACTIONS:
     for TRANS in DAY:
         DAY_TOTAL += TRANS
 
-    if DAY_TOTAL < MIN or MIN is None:
-        print MIN, DAY_TOTAL 
-        MIN = DAY_TOTAL      
+    if DAY_TOTAL < MINIMUM or MINIMUM is None:
+        print MINIMUM, DAY_TOTAL 
+        MINIMUM = DAY_TOTAL      
         
-    if DAY_TOTAL > MAX or MAX is None:
-        print MAX, DAY_TOTAL
-        MAX = DAY_TOTAL
+    if DAY_TOTAL > MAXIMUM or MAXIMUM is None:
+        print MAXIMUM, DAY_TOTAL
+        MAXIMUM = DAY_TOTAL
         
 
     TOTAL += DAY_TOTAL
